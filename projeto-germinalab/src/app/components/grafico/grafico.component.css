@@ -1,0 +1,88 @@
+:root{
+    --cor-fundo: #E0FFDE;
+    --cor-verde-claro1: #7DE5B0;
+    --cor-verde-claro2: #00CC73;
+    --cor-verde: #008C4F;
+    --cor-amarelo-claro: #F5F09E;
+    --cor-amarelo: #C7DB4A;
+    --cor-rosa-claro1: #F5D9C7;
+    --cor-laranja-claro: #FF9663;
+    --cor-laranja: #FF522B;
+    --cor-rosa-claro2: #FFD4FF;
+    --cor-rosa: #FF85FA;
+    --cor-roxo: #690059;
+    --cor-azul-claro: #C7E5FF ;
+    --cor-azul-bebe: #638CFF;
+    --cor-azul:  #000FF2 ;
+    --cor-amarelo-queijo: #FCCC00;
+    --cor-laranja2: #DE7D00;
+    --cor-amarelo-claro2: #9E9940;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .nota-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .btn-salvar {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #007f5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .btn-salvar:hover {
+    background-color: #005f46;
+  }
+  
