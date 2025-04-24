@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastrar Aluno</title>
+  <link rel="stylesheet" href="cadastrar-nota.component.css"/>
+</head>
+<body>
+  <div class="page">
+    <header class="breadcrumb">
+      <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
+    </header>
+
+    <h1>Cadastrar Aluno</h1>
+
+    <div class="steps">
+      <div class="step">
+        <span class="circle">1</span>
+        <span>Informações Básicas</span>
+      </div>
+      <div class="step active">
+        <span class="circle">2</span>
+        <span>Notas</span>
+      </div>
+    </div>
+
+    <form class="form">
+      <input type="text" placeholder="Linguagens" required />
+      <input type="text" placeholder="Exatas" />
+      <input type="text" placeholder="Ciências" />
+      <div class="buttons">
+        <button type="button" class="descartar">Descartar</button>
+        <button type="submit" class="proximo">cadastrar Aluno</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
