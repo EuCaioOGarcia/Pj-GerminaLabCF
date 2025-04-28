@@ -1,90 +1,141 @@
-:root{
-    --cor-fundo: #E0FFDE;
-    --cor-verde-claro1: #7DE5B0;
-    --cor-verde-claro2: #00CC73;
-    --cor-verde: #008C4F;
-    --cor-amarelo-claro: #F5F09E;
-    --cor-amarelo: #C7DB4A;
-    --cor-rosa-claro1: #F5D9C7;
-    --cor-laranja-claro: #FF9663;
-    --cor-laranja: #FF522B;
-    --cor-rosa-claro2: #FFD4FF;
-    --cor-rosa: #FF85FA;
-    --cor-roxo: #690059;
-    --cor-azul-claro: #C7E5FF ;
-    --cor-azul-bebe: #638CFF;
-    --cor-azul:  #000FF2 ;
-    --cor-amarelo-queijo: #FCCC00;
-    --cor-laranja2: #DE7D00;
-    --cor-amarelo-claro2: #9E9940;
-
+:root {
+  --cor-fundo: #E0FFDE;
+  --cor-verde-claro1: #7DE5B0;
+  --cor-verde-claro2: #00CC73;
+  --cor-verde: #008C4F;
+  --cor-amarelo-claro: #F5F09E;
+  --cor-amarelo: #C7DB4A;
+  --cor-rosa-claro1: #F5D9C7;
+  --cor-laranja-claro: #FF9663;
+  --cor-laranja: #FF522B;
+  --cor-rosa-claro2: #FFD4FF;
+  --cor-rosa: #FF85FA;
+  --cor-roxo: #690059;
+  --cor-azul-claro: #C7E5FF;
+  --cor-azul-bebe: #638CFF;
+  --cor-azul: #000FF2;
+  --cor-amarelo-queijo: #FCCC00;
+  --cor-laranja2: #DE7D00;
+  --cor-amarelo-claro2: #9E9940;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-  }
-  /* h1 header main span a */
+body {
+  color: #111;
+}
 
-  
-  body {
-    background-color: var(--cor-fundo);
-    color: #111;
-  }
-  
-  .page {
-    padding: 40px;
-  }
-  
-  .breadcrumb {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  .breadcrumb a {
-    color: #666;
-    text-decoration: none;
-  }
-  
-  .content h1 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  
-  .card-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    color: #111;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 20px 30px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-  }
-  
-  .card .icon {
-    font-size: 22px;
-  }
-  
-  .card .text {
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#header-perfil ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#header-perfil li {
+  margin-left: 15px;
+}
+
+.container {
+  display: flex;
+  margin-top: 60px; /* Espaço para o header */
+}
+
+.sidebar {
+  width: 70px;
+  background-color: #fff;
+  height: calc(100vh - 60px); /* Menos o header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  border-right: 1px solid #eee;
+  position: fixed;
+  top: 60px;
+  left: 0;
+}
+
+.sidebar a {
+  margin: 15px 0;
+}
+
+.sidebar img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.page {
+  margin-left: 70px;
+  padding: 40px;
+  flex-grow: 1;
+  width: calc(100% - 70px);
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.content h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.card .icon {
+  font-size: 22px;
+}
+
+.card .text {
+  font-size: 16px;
+  font-weight: 600;
+}
