@@ -26,9 +26,14 @@
       <input type="text" placeholder="Tipo de alimentação" required/>
 
       <div class="buttons">
+        <button routerLink="/login"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page" class="card"
+        type="button" class="proximo">◀️Voltar</button>
         <button type="submit" class="proximo">cadastrar</button>
       </div>
     </form>
-  </div>
+    <router-outlet></router-outlet>
 </body>
 </html>
+
