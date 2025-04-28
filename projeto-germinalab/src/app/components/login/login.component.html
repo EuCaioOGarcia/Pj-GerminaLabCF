@@ -22,12 +22,23 @@
           <input type="password" placeholder="Senha" required />
 
           <div class="actions">
-            <button class="btn primary">📥 Cadastrar</button>
-            <a href="#" class="login-link">Fazer login</a>
+            <button routerLink=""
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page" class="card"
+            type="button" class="proximo">◀️Voltar</button>
+            <a href="#" class="link">Esqueci minha senha</a>
+            <button   routerLink="/cadastroUser"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page" class="login-link" class="btn primary">📥 Cadastrar</button>
+            <a routerLink="/gerenciamentoNotas"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page">Fazer login</a>
           </div>
         </form>
       </div>
     </main>
   </div>
+  <router-outlet></router-outlet>
 </body>
 </html>
+

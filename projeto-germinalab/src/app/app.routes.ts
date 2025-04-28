@@ -11,6 +11,7 @@ export const routes: Routes = [
         path: "",
         component: HomeComponent
     },
+
     {
         path: "grafico",
         component: GraficoComponent
@@ -24,7 +25,7 @@ export const routes: Routes = [
         component: CadastrarUserComponent
     },
     {
-        path: "gerenciamento",
+        path: "gerenciamentoNotas",
         component: GerenciamentoNotasComponent
     },
     {

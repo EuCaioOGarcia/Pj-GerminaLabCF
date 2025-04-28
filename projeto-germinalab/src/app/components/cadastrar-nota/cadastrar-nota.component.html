@@ -27,13 +27,20 @@
 
     <form class="form">
       <input type="text" placeholder="Linguagens" required />
-      <input type="text" placeholder="Exatas" />
-      <input type="text" placeholder="Ciências" />
+      <input type="text" placeholder="Exatas" required/>
+      <input type="text" placeholder="Ciências" required/>
       <div class="buttons">
-        <button type="button" class="descartar">Descartar</button>
+        <button routerLink="/cadastroAluno"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page" class="card"
+        type="button" class="proximo">◀️Voltar</button>
+        <button type="reset" class="descartar">Descartar</button>
         <button type="submit" class="proximo">cadastrar Aluno</button>
       </div>
+
     </form>
   </div>
+  <router-outlet></router-outlet>
 </body>
 </html>
+

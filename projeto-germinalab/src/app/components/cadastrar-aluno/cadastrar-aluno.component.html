@@ -29,15 +29,32 @@
       <input type="email" placeholder="E-mail" required />
       <input type="text" placeholder="Nome completo" required />
       <input type="text" placeholder="Gênero" />
-      <input type="date" placeholder="Data de nascimento" />
+      <input type="date" placeholder="Data de nascimento" required/>
       <input type="text" placeholder="Tipo de alimentação" />
       <input type="text" placeholder="Escolaridade Pais" />
 
       <div class="buttons">
-        <button type="button" class="descartar">Descartar</button>
-        <button type="submit" class="proximo">Próximo</button>
+        <button routerLink="/gerenciamentoNotas"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page" class="card"
+         type="button" class="proximo">◀️Voltar</button>
+
+        <button type="reset" class="descartar">Descartar</button>
+
+        <button routerLink="/cadastroNota"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="step" class="card"
+         type="submit" class="proximo">Próximo</button>
+
       </div>
+      
     </form>
+
+    
+
+    
   </div>
+  <router-outlet></router-outlet>
 </body>
 </html>
+

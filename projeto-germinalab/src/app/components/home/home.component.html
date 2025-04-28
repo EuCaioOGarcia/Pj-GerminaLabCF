@@ -8,26 +8,33 @@
 
 </head>
 <body>
+  <!-- fazer uma pagina antes para ter /um inicio (necessidade baixa) -->
   <div class="page">
     <header class="breadcrumb">
-      <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
+      <p><a routerLink="/login" routerLinkActive="router-link-active" >Início</a> > <strong>Laboratório de Germinares</strong></p>
     </header>
 
     <main class="content">
       <h1>Laboratório de Germinares</h1>
 
       <div class="card-container">
-        <a href="#" class="card">
+        <a  routerLink="/login"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page" class="card">
           <span class="icon">😊</span>
           <span class="text">Gerenciamento de Notas</span>
         </a>
 
-        <a href="#" class="card">
+        <a  routerLink="/grafico"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page" class="card">
           <span class="icon">📈</span>
           <span class="text">Gráficos</span>
         </a>
       </div>
     </main>
   </div>
+  <router-outlet></router-outlet>
 </body>
 </html>
+

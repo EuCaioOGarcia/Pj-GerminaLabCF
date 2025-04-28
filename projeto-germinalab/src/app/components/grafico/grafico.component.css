@@ -79,4 +79,8 @@
   .btn-salvar:hover {
     background-color: #005f46;
   }
-  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
