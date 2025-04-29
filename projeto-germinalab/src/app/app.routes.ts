@@ -9,11 +9,6 @@ import { CadastrarNotaComponent } from './components/cadastrar-nota/cadastrar-no
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
-    // pagina de erro 404
-    { 
-        path: '**', 
-        component: PageNotFoundComponent
-    },
     {
         path: "home",
         title: 'Casa Estelar',
@@ -57,6 +52,11 @@ export const routes: Routes = [
         title: 'Cadastro de Nota Estelar',
         component: CadastrarNotaComponent
     },
-
+    // pagina de erro 404
+    { 
+        path: '**', 
+        title: 'error 404',
+        component: PageNotFoundComponent
+    },
 
 ];
