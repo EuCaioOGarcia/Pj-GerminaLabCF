@@ -1,0 +1,76 @@
+  <mat-stepper [linear]="isLinear" #stepper>
+    <!-- cadastro aluno -->
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <!-- txt step -->
+        <ng-template matStepLabel>Fill out the aluno</ng-template>
+        
+
+            <mat-form-field>
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>E-mail</mat-label>
+                <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required email="true">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Gênero</mat-label>
+                <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required >
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>data Nascimento</mat-label>
+                <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>tipo Alimentação</mat-label>
+                <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>escolaridade país</mat-label>
+                <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+            </mat-form-field>
+        
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!-- cadastro Notas -->
+    <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
+      <form [formGroup]="secondFormGroup">
+
+        <mat-form-field>
+          <mat-label>Linguagens</mat-label>
+          <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                 required>
+
+        </mat-form-field>
+                  <mat-form-field>
+                      <mat-label>Exatas</mat-label>
+                                <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                                       required>
+                  </mat-form-field>
+          <mat-form-field>
+              <mat-label>Ciências</mat-label>
+              <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                     required>
+          </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <!-- terminar -->
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+  

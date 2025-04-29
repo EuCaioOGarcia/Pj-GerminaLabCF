@@ -7,6 +7,7 @@ import { GerenciamentoNotasComponent } from './components/gerenciamento-notas/ge
 import { CadastrarAlunoComponent } from './components/cadastrar-aluno/cadastrar-aluno.component';
 import { CadastrarNotaComponent } from './components/cadastrar-nota/cadastrar-nota.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CadastroAlComponent } from './components/cadastro-al/cadastro-al.component';
 
 export const routes: Routes = [
     {
@@ -41,6 +42,11 @@ export const routes: Routes = [
         path: "gerenciamentoNotas",
         title: 'Gerenciamento de Notas Estelar',
         component: GerenciamentoNotasComponent
+    },
+    {
+        path: "cadastroAl",
+        title: '',
+        component: CadastroAlComponent,
     },
     {
         path: "cadastroAluno",
