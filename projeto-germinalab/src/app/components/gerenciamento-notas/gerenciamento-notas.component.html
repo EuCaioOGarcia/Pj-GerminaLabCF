@@ -2,92 +2,119 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gerenciamento de Notas</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerenciamento de notas</title>
+  <link rel="stylesheet" href="gerenciamento-notas.component.css"/>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <div class="p-6 max-w-7xl mx-auto">
-    <!-- Breadcrumb -->
-    <nav class="text-sm text-gray-500 mb-4">
-      Início > Laboratório de Germinares
-    </nav>
+<body>
+    <!-- fazer uma pagina antes para ter /um inicio (necessidade baixa) -->
+  <header class="main-header">
+    <div id="header-estelar">
+      <img src="../../../assets/Images/estelar.png" alt="Logo Estelar">
+    </div>
+    <div id="header-perfil">
+      <nav>
+        <ul class="lista-navegacao">
+          <li><img src="../../../assets/Images/image-icone.png" alt="Imagem Perfil"></li>
+          <li><img src="../../../assets/Images/notificacao.png" alt="Notificação"></li>
+          <li><img src="../../../assets/Images/user.png" alt="Usuário"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Título -->
-    <h1 class="text-2xl font-bold mb-4">Gerenciamento de notas</h1>
+  <div class="container">
+    <aside class="sidebar">
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/home.png" alt="Início"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/card-machine.png" alt="Notas"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/university.png" alt="Gráficos"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+    </aside>
+
+    <div class="page">
+      <nav class="breadcrumb">
+        <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
+      </nav>
+
+      <!-- Título -->
+    <h1 class="titulo">Gerenciamento de notas</h1>
 
     <!-- Barra de busca e botão -->
-    <div class="flex justify-between items-center mb-4">
-      <input
-        type="text"
-        placeholder="Buscar por nome"
-        class="border border-gray-300 rounded px-4 py-2 w-1/3"
-      />
-      <button routerLink="/cadastroAluno"
-              routerLinkActive="active"
-          ariaCurrenthenActive="page" class="card"
-          class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
-      Cadastrar Aluno
-      </button>
+    <div class="topo">
+      <div class="busca-container">
+        <input type="text" placeholder="Buscar por nome" class="busca" />
+        <button class="btn-pesquisar">Pesquisar</button>
+      </div>
+      <button class="btn-cadastrar">Cadastrar Aluno</button>
     </div>
 
     <!-- Tabela -->
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white border rounded-lg">
-        <thead class="bg-gray-100 text-gray-700">
+    <div class="tabela-container">
+      <table class="tabela">
+        <thead>
           <tr>
-            <th class="px-4 py-2 text-left">Nome</th>
-            <th class="px-4 py-2">E-mail</th>
-            <th class="px-4 py-2">Ano</th>
-            <th class="px-4 py-2">Série</th>
-            <th class="px-4 py-2">Exatas</th>
-            <th class="px-4 py-2">Linguagens</th>
-            <th class="px-4 py-2">Ciências</th>
-            <th class="px-4 py-2">Média</th>
-            <th class="px-4 py-2">Situação</th>
-            <th class="px-4 py-2">Ações</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Ano</th>
+            <th>Série</th>
+            <th>Exatas</th>
+            <th>Linguagens</th>
+            <th>Ciências</th>
+            <th>Média</th>
+            <th>Situação</th>
+            <th>Ações</th>
           </tr>
         </thead>
         <tbody>
-          <!-- Exemplo de linha -->
-          <tr class="text-center border-t">
-            <td class="px-4 py-2 text-left"></td>
-            <td class="px-4 py-2"></td>
-            <td class="px-4 py-2"></td>
-            <td class="px-4 py-2"></td>
-            <td class="px-4 py-2"></td>
-            <td class="px-4 py-2"></td>
-            <td class="px-4 py-2"></td>
-            <td class="px-4 py-2"></td>
-            <td class="px-4 py-2">
-              <span class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-sm"></span>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <span class=""></span>
             </td>
-            <td class="px-4 py-2"></td>
+            <td class="acoes"></td>
           </tr>
-          <!-- Repetir linhas conforme necessário -->
         </tbody>
       </table>
     </div>
 
     <!-- Paginação -->
-    <div class="flex justify-between items-center mt-4 text-sm">
-      <div>Itens por página:
-        <select class="ml-1 border border-gray-300 rounded px-2 py-1">
+    <div class="paginacao-container">
+      <div>
+        Item por página:
+        <select class="itens-pagina">
           <option>5</option>
           <option>10</option>
           <option>20</option>
         </select>
       </div>
-      <div>
-        <button class="mx-1 px-2 py-1 border border-gray-300 rounded">1</button>
-        <button class="mx-1 px-2 py-1 border border-gray-300 rounded text-gray-400" disabled>2</button>
-        <button class="mx-1 px-2 py-1 border border-gray-300 rounded text-gray-400" disabled>3</button>
-        ...
+      <div class="numeros-pagina">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <span>...</span>
+        <button>10</button>
       </div>
+    </div>
     </div>
   </div>
   <router-outlet></router-outlet>
 </body>
 </html>
-
-<!-- como n tem css vou esperar pra colocar o botao de voltar -->

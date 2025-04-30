@@ -74,10 +74,20 @@ body {
 }
 
 .sidebar a {
-  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* aumenta a área clicável */
+  border-radius: 10px;
+  transition: background-color 0.3s;
 }
 
-.sidebar img {
+.sidebar a:hover {
+  background-color: #00CC73;
+}
+
+
+.sidebar img  {
   width: 24px;
   height: 24px;
   object-fit: contain;
@@ -129,6 +139,7 @@ body {
 .card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transform: translateY(-2px);
+  background-color: #00CC73;
 }
 
 .card .icon {

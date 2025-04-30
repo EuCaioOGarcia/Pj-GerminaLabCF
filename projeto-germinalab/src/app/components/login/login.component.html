@@ -7,11 +7,45 @@
   <link rel="stylesheet" href="login.component.css"/>
 </head>
 <body>
-  <div class="app">
-    <main class="main">
-      <div class="header">
+    <!-- fazer uma pagina antes para ter /um inicio (necessidade baixa) -->
+  <header class="main-header">
+    <div id="header-estelar">
+      <img src="../../../assets/Images/estelar.png" alt="Logo Estelar">
+    </div>
+    <div id="header-perfil">
+      <nav>
+        <ul class="lista-navegacao">
+          <li><img src="../../../assets/Images/image-icone.png" alt="Imagem Perfil"></li>
+          <li><img src="../../../assets/Images/notificacao.png" alt="Notificação"></li>
+          <li><img src="../../../assets/Images/user.png" alt="Usuário"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/home.png" alt="Início"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/card-machine.png" alt="Notas"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/university.png" alt="Gráficos"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+    </aside>
+
+    <div class="page">
+      <nav class="breadcrumb">
         <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
-      </div>
+      </nav>
 
       <div class="login-box">
         <h1>Laboratório de Germinares</h1>
@@ -24,16 +58,15 @@
           <div class="actions">
             <button   routerLink="/cadastroUser"
             routerLinkActive="active"
-            ariaCurrentWhenActive="page" class="login-link" class="btn primary" type="button">📥 Cadastrar</button>
+            ariaCurrentWhenActive="page"  class="btn primary" type="button"><img src="../../../assets/Images/cadastro.png" alt="">Cadastrar</button>
             <a routerLink="/gerenciamentoNotas"
             routerLinkActive="active"
-            ariaCurrentWhenActive="page">Fazer login</a>
+            ariaCurrentWhenActive="page" class="login-link"><img src="../../../assets/Images/login.png" alt="">Fazer login</a>
           </div>
         </form>
       </div>
-    </main>
+    </div>
   </div>
   <router-outlet></router-outlet>
 </body>
 </html>
-

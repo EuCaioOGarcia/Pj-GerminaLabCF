@@ -3,15 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gerenciar Nota</title>
+  <title>Gráficos</title>
   <link rel="stylesheet" href="grafico.component.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>gráficos</h1>
+  <header class="main-header">
+    <div id="header-estelar">
+      <img src="../../../assets/Images/estelar.png" alt="Logo Estelar">
+    </div>
+    <div id="header-perfil">
+      <nav>
+        <ul class="lista-navegacao">
+          <li><img src="../../../assets/Images/image-icone.png" alt="Imagem Perfil"></li>
+          <li><img src="../../../assets/Images/notificacao.png" alt="Notificação"></li>
+          <li><img src="../../../assets/Images/user.png" alt="Usuário"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container-page">
+    <aside class="sidebar">
+      <a routerLink=""><img src="../../../assets/Images/home.png" alt="Início"></a>
+      <a routerLink=""><img src="../../../assets/Images/card-machine.png" alt="Notas"></a>
+      <a routerLink=""><img src="../../../assets/Images/university.png" alt="Gráficos"></a>
+      <a routerLink=""><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+      <a routerLink=""><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+    </aside>
+
+    <div class="page">
+      <nav class="breadcrumb">
+        <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
+      </nav>
+        <main class="content">
+          <h1>Gráficos</h1>
+        </main>
+    </div>
     
   </div>
-  <div class="actions">
-  </div>
 </body>
+
 </html>
