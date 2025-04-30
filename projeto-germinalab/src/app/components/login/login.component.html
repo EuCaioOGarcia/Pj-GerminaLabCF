@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Laboratório de Germinares</title>
   <link rel="stylesheet" href="login.component.css"/>
+  <script>
+      const closeBtn = document.getElementById("closeModal");
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("open")
+      });
+  </script>
 </head>
 <body>
     <!-- fazer uma pagina antes para ter /um inicio (necessidade baixa) -->
@@ -64,6 +70,7 @@
             ariaCurrentWhenActive="page" class="login-link"><img src="../../../assets/Images/login.png" alt="">Fazer login</a>
           </div>
         </form>
+
       </div>
     </div>
   </div>
