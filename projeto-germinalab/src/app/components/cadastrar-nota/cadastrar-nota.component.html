@@ -3,40 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cadastrar Aluno</title>
+  <title>Laboratório de Germinares</title>
   <link rel="stylesheet" href="cadastrar-nota.component.css"/>
 </head>
 <body>
-  <div class="page">
-    <header class="breadcrumb">
-      <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
-    </header>
-
-    <h1>Cadastrar Aluno</h1>
-
-    <div class="steps">
-      <div class="step">
-        <span class="circle">1</span>
-        <span>Informações Básicas</span>
-      </div>
-      <div class="step active">
-        <span class="circle">2</span>
-        <span>Notas</span>
-      </div>
+  <header class="main-header">
+    <div id="header-estelar">
+      <img src="../../../assets/Images/estelar.png" alt="Logo Estelar">
     </div>
+    <div id="header-perfil">
+      <nav>
+        <ul class="lista-navegacao">
+          <li><img src="../../../assets/Images/image-icone.png" alt="Imagem Perfil"></li>
+          <li><img src="../../../assets/Images/notificacao.png" alt="Notificação"></li>
+          <li><img src="../../../assets/Images/user.png" alt="Usuário"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <form class="form">
-      <input type="text" placeholder="Linguagens" required />
-      <input type="text" placeholder="Exatas" required/>
-      <input type="text" placeholder="Ciências" required/>
-      <div class="buttons">
-        <button type="reset" class="descartar">Descartar</button>
-        <button type="submit" class="proximo">cadastrar Aluno</button>
+  <div class="container">
+    <aside class="sidebar">
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/home.png" alt="Início"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/card-machine.png" alt="Notas"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/university.png" alt="Gráficos"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+    </aside>
+
+    <div class="page">
+      <nav class="breadcrumb">
+        <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
+      </nav>
+      <h1>Cadastrar Aluno</h1>
+
+      <div class="steps">
+        <div class="step">
+          <span class="circle">1</span>
+          <span>Informações Básicas</span>
+        </div>
+        <div class="step active">
+          <span class="circle">2</span>
+          <span>Notas</span>
+        </div>
       </div>
-
-    </form>
+  
+      <form class="form">
+        <input type="text" placeholder="Linguagens" required />
+        <input type="text" placeholder="Exatas" required/>
+        <input type="text" placeholder="Ciências" required/>
+        <div class="buttons">
+          <button type="reset" class="descartar">Descartar</button>
+          <button type="submit" class="proximo">cadastrar Aluno</button>
+        </div>
+  
+      </form>
+    </div>
   </div>
   <router-outlet></router-outlet>
 </body>
 </html>
-

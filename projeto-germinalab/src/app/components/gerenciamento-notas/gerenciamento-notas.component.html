@@ -52,11 +52,14 @@
 
     <!-- Barra de busca e botão -->
     <div class="topo">
-      <div class="busca-container">
-        <input type="text" placeholder="Buscar por nome" class="busca" />
-        <button class="btn-pesquisar">Pesquisar</button>
+      <div class="pesquisa-input">
+        <img src="../../../assets/Images/search.png" alt="search-icon">
+        <input   type="text" placeholder="Buscar por nome" class="busca" />
       </div>
-      <button class="btn-cadastrar">Cadastrar Aluno</button>
+      <div class="busca-container">
+        <button class="btn-pesquisar">Pesquisar</button>
+        <button class="btn-cadastrar"><img src="../../../assets/Images/cadastro.png" alt=""> Cadastrar Aluno</button>
+      </div>
     </div>
 
     <!-- Tabela -->
@@ -97,6 +100,13 @@
 
     <!-- Paginação -->
     <div class="paginacao-container">
+      <div class="numeros-pagina">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <span>...</span>
+        <button>10</button>
+      </div>
       <div>
         Item por página:
         <select class="itens-pagina">
@@ -104,13 +114,6 @@
           <option>10</option>
           <option>20</option>
         </select>
-      </div>
-      <div class="numeros-pagina">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <span>...</span>
-        <button>10</button>
       </div>
     </div>
     </div>

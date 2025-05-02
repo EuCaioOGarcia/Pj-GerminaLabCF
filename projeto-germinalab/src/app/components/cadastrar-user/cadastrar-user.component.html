@@ -3,34 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cadastrar Aluno</title>
+  <title>Laboratório de Germinares</title>
   <link rel="stylesheet" href="cadastrar-user.component.css"/>
 </head>
 <body>
-  <div class="page">
-    <header class="breadcrumb">
-      <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
-    </header>
-
-    <h1>Cadastrar</h1> 
-      <h2>Preencha os campos a seguir</h2>
-      <br>
+  <header class="main-header">
+    <div id="header-estelar">
+      <img src="../../../assets/Images/estelar.png" alt="Logo Estelar">
     </div>
+    <div id="header-perfil">
+      <nav>
+        <ul class="lista-navegacao">
+          <li><img src="../../../assets/Images/image-icone.png" alt="Imagem Perfil"></li>
+          <li><img src="../../../assets/Images/notificacao.png" alt="Notificação"></li>
+          <li><img src="../../../assets/Images/user.png" alt="Usuário"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <form class="form">
-      <input type="email" placeholder="E-mail" required />
-      <input type="password" placeholder="Senha" required />
-      <input type="text" placeholder="Gênero" />
-      <input type="text" placeholder="Nome completo" required/>
-      <input type="date" placeholder="Data de nascimento"required />
-      <input type="text" placeholder="Tipo de alimentação" required/>
+  <div class="container">
+    <aside class="sidebar">
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/home.png" alt="Início"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/card-machine.png" alt="Notas"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/university.png" alt="Gráficos"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+    </aside>
 
-      <div class="buttons">
+    <div class="page">
+      <nav class="breadcrumb">
+        <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
+      </nav>
 
-        <button type="submit" class="proximo">cadastrar</button>
-      </div>
-    </form>
-    <router-outlet></router-outlet>
+      <h1>Cadastrar</h1>
+      <p>Preencha os campos a seguir</p>
+
+  
+      <form class="form">
+        <input type="email" placeholder="E-mail" required />
+        <input type="text" placeholder="Nome completo" required />
+        <input type="text" placeholder="Gênero" />
+        <input type="date" placeholder="Data de nascimento" required/>
+        <input type="text" placeholder="Tipo de alimentação" />
+  
+        <div class="buttons">
+  
+  
+          <button routerLink="/cadastroNota"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="step" 
+           type="submit" class="proximo">Próximo</button>
+  
+        </div>
+        
+      </form>
+      
+    </div>
+  </div>
+  <router-outlet></router-outlet>
 </body>
 </html>
-

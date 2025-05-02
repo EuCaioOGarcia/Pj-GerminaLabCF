@@ -111,9 +111,9 @@
     text-decoration: none;
   }
   
-  .content h1 {
-    font-size: 24px;
-    margin-bottom: 30px;
+  .page h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   
   
@@ -135,31 +135,32 @@
     align-items: center;
     gap: 8px;
   }
-  
-  .busca {
-    padding: 8px 12px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+.pesquisa-input{
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 400px;
   }
   
-  .btn-pesquisar {
-    background-color: #f3f4f6;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.pesquisa-input img{
+  width: 16px;
+  height: 16px;
   
-  .btn-cadastrar {
-    background-color: #059669;
-    color: white;
-    padding: 8px 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+}
+
+.pesquisa-input input{
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+
   .tabela-container {
     overflow-x: auto;
     background-color: white;
@@ -208,15 +209,16 @@
   .paginacao-container {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 14px;
+    flex-direction: row-reverse;
   }
   
   .itens-pagina {
     padding: 6px 10px;
     border-radius: 5px;
     border: 1px solid #d1d5db;
+    margin-right: 15px;
   }
   
   .numeros-pagina button {
@@ -231,3 +233,37 @@
   .numeros-pagina span {
     margin: 0 6px;
   }
+
+  
+.btn-cadastrar {
+  background-color: #1c8f66;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-pesquisar {
+  background: none;
+  color: #007f5f;
+}
+
+.btn-cadastrar,
+.btn-pesquisar{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+
+.btn-cadastrar img{
+  width: 16px;
+  height: 16px;
+}
+
+.btn-pesquisar:hover {
+  text-decoration: underline;
+}
