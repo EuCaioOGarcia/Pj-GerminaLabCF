@@ -6,7 +6,56 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="page">
+  <header class="main-header">
+    <div id="header-estelar">
+      <img src="../../../assets/Images/estelar.png" alt="Logo Estelar">
+    </div>
+    <div id="header-perfil">
+      <nav>
+        <ul class="lista-navegacao">
+          <li><img src="../../../assets/Images/image-icone.png" alt="Imagem Perfil"></li>
+          <li><img src="../../../assets/Images/notificacao.png" alt="Notificação"></li>
+          <li><img src="../../../assets/Images/user.png" alt="Usuário"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <a routerLink=""
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"><img src="../../../assets/Images/home.png" alt="Início"></a>
+    <a routerLink=""
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"><img src="../../../assets/Images/card-machine.png" alt="Notas"></a>
+    <a routerLink=""
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"><img src="../../../assets/Images/university.png" alt="Gráficos"></a>
+    <a routerLink=""
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+    <a routerLink=""
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+  </aside>
+  <div class="container">
+    <aside class="sidebar">
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/home.png" alt="Início"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/card-machine.png" alt="Notas"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/university.png" alt="Gráficos"></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+      <a routerLink=""
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"><img src="../../../assets/Images/image-icone-sidebar.png" alt=""></a>
+    </aside>
     <header class="breadcrumb">
       <p><a href="#">Início</a> > <strong>Laboratório de Germinares</strong></p>
     </header>
@@ -20,11 +69,11 @@
   
               <mat-form-field>
                 <mat-label>Name</mat-label>
-                <input matInput placeholder="Last name, First name" formControlName="nameCtrl" required type="text">
+                <input matInput placeholder="Last name, First name" formControlName="nameCtrl" required>
               </mat-form-field>
               <mat-form-field>
                   <mat-label>E-mail</mat-label>
-                  <input matInput placeholder="Last name, First name" formControlName="emailCtrl" required email="true">
+                  <input matInput placeholder="Last name, First name" formControlName="emailCtrl" required >
               </mat-form-field>
               <mat-form-field>
                   <mat-label>Gênero</mat-label>
@@ -54,18 +103,18 @@
   
           <mat-form-field>
             <mat-label>Linguagens</mat-label>
-            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+            <input matInput formControlName="Linguagensctrl" placeholder="Ex. 1 Main St, New York, NY"
                    required>
   
           </mat-form-field>
           <mat-form-field>
               <mat-label>Exatas</mat-label>
-                        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                        <input matInput formControlName="Exatasctrl" placeholder="Ex. 1 Main St, New York, NY"
                                required>
           </mat-form-field>
             <mat-form-field>
           <mat-label>Ciências</mat-label>
-          <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+          <input matInput formControlName="Cienciasctrl" placeholder="Ex. 1 Main St, New York, NY"
                  required>
             </mat-form-field>
           <div class="buttons">

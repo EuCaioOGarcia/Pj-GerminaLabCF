@@ -44,20 +44,20 @@ export const routes: Routes = [
         component: GerenciamentoNotasComponent
     },
     {
-        path: "cadastroAl",
-        title: '',
-        component: CadastroAlComponent,
-    },
-    {
         path: "cadastroAluno",
         title: 'Cadastro de Aluno Estelar',
-        component: CadastrarAlunoComponent
+        component: CadastroAlComponent,
     },
-    {
-        path: "cadastroNota",
-        title: 'Cadastro de Nota Estelar',
-        component: CadastrarNotaComponent
-    },
+    // {
+    //     path: "cadastroAluno",
+    //     title: 'Cadastro de Aluno Estelar',
+    //     component: CadastrarAlunoComponent
+    // },
+    // {
+    //     path: "cadastroNota",
+    //     title: 'Cadastro de Nota Estelar',
+    //     component: CadastrarNotaComponent
+    // },
     // pagina de erro 404
     { 
         path: '**', 

@@ -30,6 +30,7 @@ body {
   color: #111;
 }
 
+/* header */
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -54,6 +55,7 @@ body {
   margin-left: 15px;
 }
 
+/* container arrumar */
 .container {
   display: flex;
   margin-top: 60px; /* Espaço para o header */
@@ -92,7 +94,18 @@ body {
   height: 24px;
   object-fit: contain;
 }
+/* breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
 
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+/* fim */
 .page {
   margin-left: 70px;
   padding: 40px;
