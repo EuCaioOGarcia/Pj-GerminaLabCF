@@ -4,8 +4,6 @@ import { GraficoComponent } from './components/grafico/grafico.component';
 import { LoginComponent } from './components/login/login.component';
 import { CadastrarUserComponent } from './components/cadastrar-user/cadastrar-user.component';
 import { GerenciamentoNotasComponent } from './components/gerenciamento-notas/gerenciamento-notas.component';
-import { CadastrarAlunoComponent } from './components/cadastrar-aluno/cadastrar-aluno.component';
-import { CadastrarNotaComponent } from './components/cadastrar-nota/cadastrar-nota.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CadastroAlComponent } from './components/cadastro-al/cadastro-al.component';
 
@@ -48,16 +46,6 @@ export const routes: Routes = [
         title: 'Cadastro de Aluno Estelar',
         component: CadastroAlComponent,
     },
-    // {
-    //     path: "cadastroAluno",
-    //     title: 'Cadastro de Aluno Estelar',
-    //     component: CadastrarAlunoComponent
-    // },
-    // {
-    //     path: "cadastroNota",
-    //     title: 'Cadastro de Nota Estelar',
-    //     component: CadastrarNotaComponent
-    // },
     // pagina de erro 404
     { 
         path: '**', 
