@@ -64,72 +64,72 @@
       <mat-step [stepControl]="firstFormGroup">
         <form [formGroup]="firstFormGroup">
           <!-- txt step -->
-          <ng-template matStepLabel>Fill out the aluno</ng-template>
+          <ng-template matStepLabel>Preencha as infs do aluno</ng-template>
           
   
               <mat-form-field>
                 <mat-label>Name</mat-label>
-                <input matInput placeholder="Last name, First name" formControlName="nameCtrl" required>
+                <input matInput  formControlName="nameCtrl" required>
               </mat-form-field>
               <mat-form-field>
                   <mat-label>E-mail</mat-label>
-                  <input matInput placeholder="Last name, First name" formControlName="emailCtrl" required >
+                  <input matInput  formControlName="emailCtrl" required >
               </mat-form-field>
               <mat-form-field>
                   <mat-label>Gênero</mat-label>
-                  <input matInput placeholder="Last name, First name" formControlName="generoCtrl" required >
+                  <input matInput  formControlName="generoCtrl" required >
               </mat-form-field>
               <mat-form-field>
                   <mat-label>data Nascimento</mat-label>
-                  <input matInput placeholder="Last name, First name" formControlName="dtNascimentoCtrl" required>
+                  <input matInput  formControlName="dtNascimentoCtrl" required>
               </mat-form-field>
               <mat-form-field>
                   <mat-label>tipo Alimentação</mat-label>
-                  <input matInput placeholder="Last name, First name" formControlName="TipoAlimentacaoCtrl" required>
+                  <input matInput  formControlName="TipoAlimentacaoCtrl" required>
               </mat-form-field>
               <mat-form-field>
                   <mat-label>escolaridade país</mat-label>
-                  <input matInput placeholder="Last name, First name" formControlName="escolaridadePais" required>
+                  <input matInput  formControlName="escolaridadePais" required>
               </mat-form-field>
-              <button mat-button matStepperNext>Next</button>
+              <button mat-button matStepperNext>Proximo</button>
             <div class="buttons">
             </div>
           </form>
       </mat-step>
   
       <!-- cadastro Notas -->
-      <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
+      <mat-step [stepControl]="secondFormGroup" label="coloque as notas">
         <form [formGroup]="secondFormGroup">
   
           <mat-form-field>
             <mat-label>Linguagens</mat-label>
-            <input matInput formControlName="Linguagensctrl" placeholder="Ex. 1 Main St, New York, NY"
+            <input matInput formControlName="Linguagensctrl" 
                    required>
   
           </mat-form-field>
           <mat-form-field>
               <mat-label>Exatas</mat-label>
-                        <input matInput formControlName="Exatasctrl" placeholder="Ex. 1 Main St, New York, NY"
+                        <input matInput formControlName="Exatasctrl" 
                                required>
           </mat-form-field>
             <mat-form-field>
           <mat-label>Ciências</mat-label>
-          <input matInput formControlName="Cienciasctrl" placeholder="Ex. 1 Main St, New York, NY"
+          <input matInput formControlName="Cienciasctrl" 
                  required>
             </mat-form-field>
           <div class="buttons">
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button matStepperNext>Next</button>
+            <button mat-button matStepperPrevious>Voltar</button>
+            <button mat-button matStepperNext>Proximo</button>
           </div>
         </form>
       </mat-step>
       <!-- terminar -->
       <mat-step>
-        <ng-template matStepLabel>Done</ng-template>
-        <p>You are now done.</p>
+        <ng-template matStepLabel>completar</ng-template>
+        <p>o cadastro foi completo com exito .</p>
         <div class="buttons">
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button (click)="stepper.reset()">Reset</button>
+          <button mat-button matStepperPrevious>Voltar</button>
+          <button mat-button (click)="stepper.reset()">Resetar</button>
         </div>
       </mat-step>
     </mat-stepper>
